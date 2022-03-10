@@ -14,10 +14,9 @@
     <!-- Core theme CSS (includes Bootstrap)-->
     <link href="css/styles.css" rel="stylesheet" />
     <style>
-      /*       body{ background-color: rgba(0,30,38,1);
-
-            }
-       */
+      .img-sistema {
+        width: 200px;
+      }
     </style>
   </head>
   <body>
@@ -39,10 +38,16 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#!">Sobre</a>
+              <a class="nav-link active" aria-current="page" href="#sobre"
+                >Sobre Mim</a
+              >
             </li>
-            <li class="nav-item"><a class="nav-link" href="#!">Projetos</a></li>
-            <li class="nav-item"><a class="nav-link" href="#!">Contato</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projetos">Projetos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sobre">Contato</a>
+            </li>
           </ul>
         </div>
       </div>
@@ -50,7 +55,7 @@
     <!-- Page Content-->
     <div class="container px-4 px-lg-5">
       <!-- Heading Row-->
-      <div class="row gx-4 gx-lg-5 align-items-center my-5">
+      <div id="sobre" class="row gx-4 gx-lg-5 align-items-center my-5">
         <div class="col-lg-4">
           <img
             class="img-fluid rounded mb-4 mb-lg-0"
@@ -58,87 +63,137 @@
             alt="..."
           />
         </div>
-        <div class="col-lg-5">
-          <h1 class="font-weight-light">Business Name or Tagline</h1>
-          <p>
-            This is a template that is great for small businesses. It doesn't
-            have too much fancy flare to it, but it makes a great use of the
-            standard Bootstrap core components. Feel free to use this template
-            for any project you want!
-          </p>
-          <a class="btn btn-primary" href="#!">Call to Action!</a>
+        <div class="col-lg-7">
+          <div class="text-center">
+            <div class="display-3 font-weight-light">Fernando Oliveira</div>
+            <div class="font-weight-light">Desenvolvedor de software</div>
+          </div>
+
+          <div id="contato" class="d-flex justify-content-evenly mt-5">
+            <a
+              href="https://www.linkedin.com/in/fernando-oliveira-6898a342/"
+              target="_blank"
+              ><img src="img/linkedin.png" alt=""
+            /></a>
+            <a
+              href="https://www.facebook.com/profile.php?id=1108011156"
+              target="_blank"
+              ><img src="img/facebook.png" alt=""
+            /></a>
+            <a href="https://github.com/feroli1000" target="_blank"
+              ><img src="img/github.png" alt="" style="border-radius: 0.8rem"
+            /></a>
+            <a
+              href="https://api.whatsapp.com/send?phone=5543996102088&text=Ol%C3%A1"
+              target="_blank"
+              ><img src="img/whatsapp.png" alt=""
+            /></a>
+          </div>
         </div>
       </div>
       <!-- Call to Action-->
-      <div class="card text-white bg-secondary my-5 py-4 text-center">
-        <div class="card-body">
-          <p class="text-white m-0">
-            This call to action card is a great place to showcase some important
-            information or display a clever tagline!
+      <div class="card text-white bg-success my-5 py-4">
+        <div class="card-body text-white">
+          <p>
+            Olá, meu nome é Fernando e sou desenvolvedor de software. Moro em
+            Londrina-PR.
+          </p>
+          <p>
+            Estou na estrada a bastante tempo e cada vez mais entusiasmado com a
+            evolução da tecnologia. Sócio da empresa Ginasium Tecnologia em
+            Fitness, atuei majoritariamente em sistemas e aplicativos voltados
+            para as áreas de Fitness, Saúde e Educação.
+          </p>
+          <p>
+            Apesar de bastante experiência com desenvolvimento desktop em
+            Delphi, minha área de atuação e interesse são os aplicativos
+            web/mobile com frontend em Vue/React e backend em PHP/Node.
+          </p>
+          <p class="m-0">
+            Abaixo, alguns sistemas desenvolvidos inteiramente por mim:
           </p>
         </div>
       </div>
-      <!-- Content Row-->
-      <div class="row gx-4 gx-lg-5">
-        <div class="col-md-4 mb-5">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Physis L14</h2>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-                magni quas ex numquam, maxime minus quam molestias corporis
-                quod, ea minima accusamus.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a class="btn btn-primary btn-sm" href="#!">More Info</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-12 mb-5">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">SOGA Fitness</h2>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quod
-                tenetur ex natus at dolorem enim! Nesciunt pariatur voluptatem
-                sunt quam eaque, vel, non in id dolore voluptates quos eligendi
-                labore.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a class="btn btn-primary btn-sm" href="#!">More Info</a>
-            </div>
-          </div>
-        </div>
-        <div class="col-md-4 mb-5">
-          <div class="card h-100">
-            <div class="card-body">
-              <h2 class="card-title">Educação em Saúde</h2>
-              <p class="card-text">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem
-                magni quas ex numquam, maxime minus quam molestias corporis
-                quod, ea minima accusamus.
-              </p>
-            </div>
-            <div class="card-footer">
-              <a class="btn btn-primary btn-sm" href="#!">More Info</a>
-            </div>
-          </div>
-        </div>
+
+      <div id="projetos" class="m-5 d-block">
+        <!-- Link de navegação na página -->
       </div>
+
+      <!-- SOGA Fitness-->
+      <div id="soga-fitness"></div>
+
+      <!-- Phsyis L14 -->
+      <div id="physis-l14"></div>
+
+      <!-- Ginasium Educação em Saúde -->
+      <div id="educacao-saude"></div>
+
+      <!-- Kidscreen -->
+      <div id="kidscreen"></div>
+
+      <!-- Testet KTK -->
+      <div id="ktk"></div>
+
+      <!-- Avaliação Sistêmica -->
+      <div id="sistemica"></div>
+
+      <!-- Ginasium Prime -->
+      <div id="prime"></div>
     </div>
+
     <!-- Footer-->
     <footer class="py-5 bg-dark">
       <div class="container px-4 px-lg-5">
         <p class="m-0 text-center text-white">
-          Copyright &copy; Your Website 2021
+          <!-- Copyright &copy; Your Website <span id="ano-atual"></span> -->
         </p>
       </div>
     </footer>
     <!-- Bootstrap core JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://player.vimeo.com/api/player.js"></script>
     <!-- Core theme JS-->
-    <script src="js/scripts.js"></script>
+    <script>
+      window.addEventListener('load', async (event) => {
+        const timestamp = new Date().getTime();
+        const soga = await axios.get(`./soga.html?v=${timestamp}`);
+        const physis = await axios.get(`./physis.html?v=${timestamp}`);
+        const ges = await axios.get(`./ges.html?v=${timestamp}`);
+        const ktk = await axios.get(`./ktk.html?v=${timestamp}`);
+        const sistemica = await axios.get(`./sistemica.html?v=${timestamp}`);
+        const kidscreen = await axios.get(`./kidscreen.html?v=${timestamp}`);
+        const prime = await axios.get(`./prime.html?v=${timestamp}`);
+
+        new Promise((resolve) => {
+          document.getElementById('soga-fitness').innerHTML = soga.data;
+          document.getElementById('physis-l14').innerHTML = physis.data;
+          document.getElementById('educacao-saude').innerHTML = ges.data;
+          document.getElementById('ktk').innerHTML = ktk.data;
+          document.getElementById('sistemica').innerHTML = sistemica.data;
+          document.getElementById('kidscreen').innerHTML = kidscreen.data;
+          document.getElementById('prime').innerHTML = prime.data;
+          resolve(true);
+        }).then(() => {
+          const iframes = document.getElementsByTagName('iframe');
+          for (let elem of iframes) {
+            elem.setAttribute(
+              'src',
+              'https://player.vimeo.com/video/413729191?h=9d11d4afac&byline=0&portrait=0'
+            );
+            elem.setAttribute(
+              'style',
+              'position:absolute;top:0;left:0;width:100%;height:100%;'
+            );
+            elem.setAttribute('frameborder', 0);
+            //elem.setAttribute('allowfullscreen', true);
+            elem.setAttribute(
+              'allow',
+              'autoplay; fullscreen; picture-in-picture'
+            );
+          }
+        });
+      });
+    </script>
   </body>
 </html>
